@@ -10,7 +10,7 @@ The data is spanned from first of April 2013 until first of April 2018. Each row
 Live weather data – consist of current and forecast. As in historic data, current weather module stores information hourly with similar fields to that of historic data. About the forecast the only difference is that it is stored daily.
 A complete guide to how APIXU is implemented can be found form their website but the code to meet requirements of ours will be presented. To bring updated values, collection processes need to be running constantly. The solution was to devote a computer in Centria’s SAP NextGen Lab to the collection and processing tasks which shall have minimum down time. Result of this was updated HANA tables containing current data of each city.
 Requirements:
--	A call to weather data provider shall to be made every hour to receive the latest weather data for a specific location.
+-	A call to weather data provider shall be made every hour to receive the latest weather data for a specific location.
 -	The data received has to be tested for correctness to avoid further damages in system.
 -	Processes shall not stop in case of error and exceptions.
 -	Report of issues shall be stored in log files.
